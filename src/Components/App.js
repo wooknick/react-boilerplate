@@ -5,6 +5,7 @@ import Routes from "./Routes";
 import Header from "./Header";
 import Theme from "../Styles/Theme";
 import GlobalStyles from "../Styles/GlobalStyles";
+import Footer from "./Footer";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Router>
           <Header />
           <Routes />
+          <Footer />
         </Router>
       </>
     </ThemeProvider>

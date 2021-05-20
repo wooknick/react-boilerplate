@@ -6,9 +6,13 @@ export default createGlobalStyle`
     *{
         box-sizing: border-box;
     }
-    body{
+    html{
         font-size: 16px;
-        font-weight: 300;
+        font-family: 'Noto Sans KR', sans-serif;
+        width: 100%;
+    }
+    body{
+        width: 100%;
     }
     a{
         text-decoration: none;

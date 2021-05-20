@@ -1,52 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import { withRouter } from "react-router-dom";
-import Input from "./Input";
-import useInput from "../Hooks/useInput";
 
-const Header = styled.header`
+const Wrapper = styled.div`
   width: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 25px 0px;
-  z-index: 2;
+  height: 48px;
+  border-bottom: 1px solid #e3e3e3;
 `;
 
-const HeaderWrapper = styled.div`
-  width: 100%;
-  max-width: ${(props) => props.theme.maxWidth};
-  display: flex;
-  justify-content: center;
-`;
+const Header = () => {
+  return <Wrapper>Header</Wrapper>;
+};
 
-const HeaderColumn = styled.div`
-  width: 33%;
-  text-align: center;
-  &:first-child {
-    margin-right: auto;
-    text-align: left;
-    display: flex;
-    justify-content: center;
-  }
-  &:nth-child(2) {
-    min-width: 300px;
-  }
-  &:last-child {
-    margin-left: auto;
-    text-align: right;
-  }
-`;
-
-export default withRouter(({ history }) => {
-  return (
-    <Header>
-      <HeaderWrapper>
-        <HeaderColumn></HeaderColumn>
-        <HeaderColumn></HeaderColumn>
-        <HeaderColumn></HeaderColumn>
-      </HeaderWrapper>
-    </Header>
-  );
-});
+export default Header;

@@ -5,7 +5,7 @@ import Home from "../Routes/Home";
 const Routes = () => {
   return (
     <Switch>
-      <Route exact path="/" component={Home} />
+      <Route path="/" component={Home} />
       <Redirect from="*" to="/" />
     </Switch>
   );
